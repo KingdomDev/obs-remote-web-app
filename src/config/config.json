@@ -1,0 +1,11 @@
+{
+  "api_server": {
+    "commands": {
+      "start_recording": "start-recording",
+      "stop_recording": "stop-recording"
+    },
+    "elements": {
+      "scenes": "scenes"
+    }
+  }
+}
