@@ -1,10 +1,14 @@
 import Vue from 'vue';
-import 'bootstrap-css-only/css/bootstrap.min.css';
-import 'mdbvue/build/css/mdb.css';
+import Buefy from 'buefy';
+import 'buefy/dist/buefy.css';
+import Vuetify from 'vuetify';
+import 'vuetify/dist/vuetify.min.css';
 import App from './App.vue';
 import router from './router';
 
 Vue.config.productionTip = false;
+Vue.use(Buefy);
+Vue.use(Vuetify);
 
 new Vue({
   router,

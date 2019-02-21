@@ -1,22 +1,25 @@
 <template>
-  <div class="container col-md-6">
+  <div class="container" id="main">
     <img alt="Vue logo" src="../assets/logo.png">
-    <div class="card">
-      <div class="card-header">OBS REMOTE WEB-APP</div>
-      <div class="card-body">
-        <Board/>
-      </div>
-    </div>
+    <v-card>
+      <v-card-title>
+        <h2><strong>OBS REMOTE WEB-APP</strong></h2>
+      </v-card-title>
+      <LivePreview/>
+      <Commands/>
+    </v-card>
   </div>
 </template>
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator';
-import Board from '@/components/Board.vue'; // @ is an alias to /src
+import Commands from '@/components/Commands.vue';
+import LivePreview from '@/components/LivePreview.vue'; // @ is an alias to /src
 
 @Component({
   components: {
-    Board
+    LivePreview,
+    Commands
   },
   data: function() {
     return {
@@ -26,3 +29,5 @@ import Board from '@/components/Board.vue'; // @ is an alias to /src
 })
 export default class Home extends Vue {}
 </script>
+<style>
+</style>
